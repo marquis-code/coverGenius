@@ -7,7 +7,7 @@
             <WhyChooseUs />
             <NeedSection />
             <AdvertSection />
-            <ClaimsTime />
+            <ClaimsTime /> 
             <AutoInsurance />
             <BussinessCovered />
             <Faq />

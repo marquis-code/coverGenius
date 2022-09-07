@@ -1,34 +1,41 @@
 <template>
-   <b-container class="pt-5 d-flex justify-content-between align-items-center">
-       <div class="pr-5">
-          <h3 class="header text-wrap font-weight-bold" style="width : 18rem;">Paper-less Insurance for your business</h3>
-          <p class="text-muted"><small>Our web interface enables you to conveniently manage your vehicles and riders under the plan. It also empowers you with data to make better management decisions.</small></p>
+  <main>
+    <VueSlickCarousel>
+       <div>
+            <b-container class="pt-5 d-block d-lg-flex justify-content-between align-items-center">
+       <div class="">
+          <h3 class="header text-wrap font-weight-bold" style="width : 18rem;">Conveniently manage your plans and staff</h3>
+          <p class="text-muted"><small>If a staff leaves, no worries! Seamlessly re-assign their plan to new staff from your dashboard. You can also;</small></p>
           <div>
-              <div class="border rounded-lg shadow-sm d-flex align-items-center indicator">
-                 <img src="@/static/img/firstSidePointer.svg" class="pr-3" style="height:40px" alt="" />
-                 <p class="hover:text-black text-muted pt-3"><small>Track Claims</small></p>
+              <div class="shadow-sm d-flex align-items-center indicator1" >
+                 <p class="hover:text-black text-muted pt-3 pl-2"><small>Track Claims</small></p>
               </div>
 
-              <div class="border rounded-lg shadow-sm d-flex align-items-center indicator my-2">
-                 <img src="@/static/img/secondSidePointer.svg" class="pr-3" style="height:40px" alt=""                                 />
-                 <p class="hover:text-black text-muted pt-3"><small>Manage your Analytics</small></p>
+              <div class="shadow-sm d-flex align-items-center indicator2 my-2">
+                 <p class="hover:text-black text-muted pt-3 pl-2"><small>Manage Staff</small></p>
               </div>
 
-              <div class="border rounded-lg shadow-sm d-flex align-items-center indicator">
-                 <img src="@/static/img/thirdSidePointer.svg" class="pr-3" style="height:40px" alt="" />
-                 <small class="text-xs">Access your insurance plans</small>
+              <div class="shadow-sm d-flex align-items-center indicator3">
+                 <small class="text-xs pl-2">Access your insurance plans</small>
               </div>
           </div>
        </div>
-       <div class="pl-5">
+       <div class="d-flex justify-content-center align-items-center">
          <img src="@/static/img/claim.svg" alt="claims" />
        </div>
   </b-container>
+       </div>
+    </VueSlickCarousel>
+  </main>
 </template>
  
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
-
+  name: 'AdvertSection',
+  components: { VueSlickCarousel },
 }
 </script>
 
@@ -41,8 +48,19 @@ export default {
     height: 30px;
    } */
 
-   .indicator {
+   .indicator1 {
     height: 40px;
+    border-left: 5px solid rgb(154, 81, 206);
+   }
+
+    .indicator2 {
+    height: 40px;
+    border-left: 5px solid rgb(217, 73, 73);
+   }
+
+    .indicator3 {
+    height: 40px;
+    border-left: 5px solid lightskyblue;
    }
 
 </style>
