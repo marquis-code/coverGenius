@@ -2,8 +2,20 @@
   <main class="container mx-auto">
     <div class="space-y-10">
       <div class="pt-5 flex justify-center items-center flex-col">
-        <p class="font-weight-light py-5 text-green-500">Bespoke plans</p>
-        <h1 class="header pb-3 text-3xl lg:text-4xl font-extrabold lg:w-5/12 text-center">
+        <p class="font-weight-light text-lg py-5 text-green-500 text-center">
+          Bespoke plans
+        </p>
+        <h1
+          class="
+            header
+            pb-3
+            text-3xl
+            lg:text-5xl
+            font-extrabold
+            lg:w-8/12
+            text-center
+          "
+        >
           Tailor-made plans suited for your business.
         </h1>
         <p class="text-center text-muted">
@@ -14,27 +26,48 @@
 
       <div class="flex items-center lg:w-4/12 mx-auto space-x-7">
         <div
-        @click="activeView = 'Auto'"
+          @click="activeView = 'Auto'"
           to="#"
-          class="rounded-md bg-green-700 text-white p-1 w-1/2 text-center"
-          >Auto</div
+          class="rounded-md bg-teal-600 text-white p-1 w-1/2 text-center"
         >
+          Auto
+        </div>
         <div
-        @click="activeView = 'Health'"
+          @click="activeView = 'Health'"
           to="#"
-          class="rounded-md text-gray-600 bg-gray-200 p-1 w-1/2 text-center hover:bg-green-700 hover:text-white"
-          >Health</div
+          class="
+            rounded-md
+            text-gray-300
+            bg-gray-50
+            p-1
+            w-1/2
+            text-center
+            hover:bg-teal-600 hover:text-white
+          "
         >
+          Health
+        </div>
         <div
-        @click="activeView = 'Others'"
+          @click="activeView = 'Others'"
           to="#"
-          class="rounded-md text-gray-600 bg-gray-200 p-1 w-1/2 text-center hover:bg-green-700 hover:text-white"
-          >Others</div
+          class="
+            rounded-md
+            text-gray-300
+            bg-gray-50
+            p-1
+            w-1/2
+            text-center
+            hover:bg-teal-600 hover:text-white
+          "
         >
+          Others
+        </div>
       </div>
     </div>
 
-   <component :is="activeView" />
+    <div class="w-10/12 mx-auto">
+      <component :is="activeView" />
+    </div>
   </main>
 </template>
 
@@ -45,16 +78,16 @@ import Others from "@/components/TailorPlans/Others.vue";
 
 export default {
   name: "Plans",
-  components : {
+  components: {
     Auto,
     Health,
-    Others
+    Others,
   },
-  data(){
+  data() {
     return {
-      activeView : 'Auto'
-    }
-  }
+      activeView: "Auto",
+    };
+  },
 };
 </script>
 

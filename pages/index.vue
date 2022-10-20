@@ -1,17 +1,21 @@
 <template>
-  <main>
+  <main class="w-full">
     <Navbar />
     <Introduction />
     <Brands />
     <hr />
     <WhyChooseUs />
-    <Plans />
+
     <AdvertSection />
+
+    <Plans />
     <ClaimsTime />
+
     <InsuranceCover />
     <Partners />
-     <Faq />
+    <Faq />
     <FooterSection />
+    <!--  -->
   </main>
 </template>
 
@@ -19,18 +23,13 @@
 import Navbar from "../components/Navbar.vue";
 import Introduction from "../components/Introduction.vue";
 import Brands from "../components/Brands.vue";
-import Insurance from "../components/Insurance.vue";
 import WhyChooseUs from "../components/WhyChooseUs.vue";
-import NeedSection from "../components/NeedSection.vue";
 import AdvertSection from "../components/AdvertSection.vue";
-import ClaimsTime from "../components/ClaimsTime.vue";
-import AutoInsurance from "../components/AutoInsurance.vue";
-import BussinessCovered from "../components/BussinessCovered.vue";
+import Plans from "../components/Plans.vue";
+import InsuranceCover from "../components/InsuranceCover.vue";
+import Partners from "../components/Partners.vue";
 import Faq from "../components/Faq.vue";
 import FooterSection from "../components/FooterSection.vue";
-import Plans from "../components/Plans.vue";
-import Partners from "../components/Partners.vue";
-import InsuranceCover from "../components/InsuranceCover.vue";
 
 export default {
   name: "IndexPage",
@@ -39,13 +38,8 @@ export default {
     Introduction,
     Partners,
     Brands,
-    Insurance,
     WhyChooseUs,
-    NeedSection,
     AdvertSection,
-    ClaimsTime,
-    AutoInsurance,
-    BussinessCovered,
     Faq,
     FooterSection,
     Plans,

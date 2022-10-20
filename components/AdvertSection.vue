@@ -1,22 +1,53 @@
 <template>
   <main class="container mx-auto pt-24">
-    <p class="text-green-500 pb-16">Bespoke solutions</p>
-    <h3 class="header flex justify-center items-center text-4xl font-extrabold lg:w-4/12 pb-4">
+    <p class="text-green-500 text-lg pb-16">Bespoke solutions</p>
+    <h3
+      class="
+        header
+        flex
+        justify-center
+        items-center
+        text-4xl
+        font-extrabold
+        lg:w-4/12
+        pb-4
+      "
+    >
       One-in-all Solution for Businesses
     </h3>
-    <div class="lg:flex justify-between space-y-6  lg:space-y-0">
+    <div
+      class="
+        lg:flex
+        justify-between
+        space-y-6
+        lg:space-y-0
+      "
+    >
       <div class="flex flex-col justify-between">
-        <p class="text-sm lg:w-7/12 header  lg:text-start">
+        <p class="text-base lg:w-9/12 header lg:text-start">
           If a staff leaves, no worries! Seamlessly re-assign their plan to new
           staff from your dashboard. You can also;
         </p>
-        <div class="space-y-4 flex justify-between lg:space-x-0 space-x-5 lg:justify-start lg:flex-col py-10 lg:py-0">
-          <div class="flex">
+        <div
+          class="
+            space-y-4
+            flex
+            lg:flex
+            justify-between
+            lg:space-x-0
+            space-x-5
+            lg:justify-start
+            lg:flex-col
+            py-10
+            lg:py-0
+          "
+        >
+          <div class="lg:flex w-1/2 hidden lg:w-full">
             <div class="h-14 w-1 indicator1"></div>
             <div
-            @click="activeView = 'Plans'"
+              @click="activeView = 'Plans'"
               class="
-              cursor-pointer
+                cursor-pointer
                 lg:w-6/12
                 w-full
                 bg-white
@@ -28,18 +59,19 @@
                 shadow-gray-400
                 pr-10
                 lg:pr-0
+                ring-1 ring-gray-50
               "
             >
               Plans
             </div>
           </div>
 
-          <div class="flex">
+          <div class="flex w-1/2 lg:w-full">
             <div class="h-14 w-1 indicator2"></div>
             <div
               @click="activeView = 'Claims'"
               class="
-              cursor-pointer
+                cursor-pointer
                 lg:w-6/12
                 w-full
                 bg-white
@@ -52,18 +84,19 @@
                 opacity-25
                 pr-10
                 lg:pr-0
+                ring-1 ring-gray-50
               "
             >
               Claims
             </div>
           </div>
 
-          <div class="flex">
+          <div class="flex w-1/2 lg:w-full">
             <div class="h-14 w-1 indicator3"></div>
             <div
               @click="activeView = 'Beneficiaries'"
               class="
-              cursor-pointer
+                cursor-pointer
                 w-6/12
                 bg-white
                 shadow-md
@@ -75,18 +108,19 @@
                 opacity-25
                 pr-28
                 lg:pr-0
+                ring-1 ring-gray-50
               "
             >
               Beneficiaries
             </div>
           </div>
 
-          <div class="lg:flex hidden">
+          <div class="lg:flex hidden w-1/2 lg:w-full">
             <div class="h-14 w-1 indicator4"></div>
             <div
               @click="activeView = 'Wallet'"
               class="
-              cursor-pointer
+                cursor-pointer
                 w-6/12
                 bg-white
                 shadow-md
@@ -96,6 +130,7 @@
                 rounded-r-md
                 shadow-gray-400
                 opacity-25
+                ring-1 ring-gray-50
               "
             >
               Wallet
@@ -114,11 +149,6 @@
           </div>
         </div>
         <div>
-          <!-- <img
-            class="object-cover"
-            src="@/static/img/dashboard.svg"
-            alt="claims"
-          /> -->
           <component :is="activeView" />
         </div>
       </div>
@@ -127,23 +157,23 @@
 </template>
 
 <script>
-import Plans from '@/components/SolutionSteps/Plans.vue';
-import Claims from '@/components/SolutionSteps/Claims.vue';
-import Beneficiaries from '@/components/SolutionSteps/Beneficiaries.vue';
-import Wallet from '@/components/SolutionSteps/Wallet.vue';
+import Plans from "@/components/SolutionSteps/Plans.vue";
+import Claims from "@/components/SolutionSteps/Claims.vue";
+import Beneficiaries from "@/components/SolutionSteps/Beneficiaries.vue";
+import Wallet from "@/components/SolutionSteps/Wallet.vue";
 export default {
   name: "AdvertSection",
-  components : {
+  components: {
     Plans,
     Claims,
     Beneficiaries,
-    Wallet
+    Wallet,
   },
-  data(){
+  data() {
     return {
-       activeView : 'Plans'
-    }
-  }
+      activeView: "Plans",
+    };
+  },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <header aria-label="Site Header" class="bg-gray-100 py-2">
-      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto container">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="/">
@@ -75,7 +75,6 @@
                   text-sm
                   text-gray-500
                   bg-gray-200
-                  shadow
                     px-4
                   font-light
                 "

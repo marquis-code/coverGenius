@@ -1,5 +1,5 @@
 <template>
-  <img class="object-cover" src="@/static/img/claim.svg" alt="claims" />
+  <img class="object-cover" src="@/static/img/PlansDashboard.svg" alt="claims" />
 </template>
 
 <script>
