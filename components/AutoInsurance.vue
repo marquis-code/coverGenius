@@ -1,6 +1,5 @@
 <template>
     <main class="">
-        <VueSlickCarousel >
             <!-- <div>
                 <b-container
                     class="background p-5 d-block d-lg-flex justify-content-between align-items-center rounded-lg border my-5">
@@ -41,7 +40,7 @@
                     class="background girlContainer p-5 d-block d-lg-flex justify-content-between align-items-center rounded-lg border my-5">
                     <div>
                         <h4 class="header text-wrap font-weight-bold text-white mb-5" style="width : 30rem;">Imagine not
-                            having to pay a  dime everytime your phone or laptop screen gets damaged. Yes, tha’s what 
+                            having to pay a  dime everytime your phone or laptop screen gets damaged. Yes, tha’s what
                             Gadget Cover does for you</h4>
                         <button class="py-2 px-4 rounded-lg border button mt-4"><small
                                 class="text-white font-weight-light">Get Gadgets Cover</small></button>
@@ -53,17 +52,12 @@
                     </div>
                 </b-container>
             </div>
-        </VueSlickCarousel>
     </main>
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
     name: 'AutoInsurance',
-    components: { VueSlickCarousel },
 }
 </script>
 

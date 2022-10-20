@@ -1,6 +1,5 @@
 <template>
     <main>
-        <VueSlickCarousel :arrows="false" :dots="false" :autoplay="true" :lazyLoad="true">
             <div>
                 <b-aspect aspect="16:9" class="background1 d-flex justify-content-between align-items-center">
                     <b-container class="d-block d-lg-flex justify-content-between align-items-center mt-5 h-50">
@@ -51,7 +50,7 @@
                             <h3 class="header text-wrap font-weight-bold" style="width : 25rem;">Leave the little things<br /> for us to worry about
 </h3>
                             <p class="text-muted py-2 font-weight-light text-size-small text-wrap"
-                                style="width : 25rem;">It can be frustrating when your devices gets damaged while working. It gets more frustrating when you bear the high cost of fixing it outside your budget. We bearthe cost of fixing screen damages and liguide spills to  your devices with an affordable Gadget Cover. 
+                                style="width : 25rem;">It can be frustrating when your devices gets damaged while working. It gets more frustrating when you bear the high cost of fixing it outside your budget. We bearthe cost of fixing screen damages and liguide spills to  your devices with an affordable Gadget Cover.
                             </p>
                         </div>
                         <div class="background2 d-flex justify-content-center align-items-center p-2 ml-2">
@@ -60,17 +59,12 @@
                     </b-container>
                 </b-aspect>
             </div>
-        </VueSlickCarousel>
     </main>
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
     name: 'Insurance',
-    components: { VueSlickCarousel },
 }
 </script>
 
@@ -98,7 +92,7 @@ export default {
     position: absolute;
     top: -30px;
     right: 60px;
-    
+
 }
 
 .rider{

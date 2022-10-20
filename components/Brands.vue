@@ -1,25 +1,24 @@
 <template>
-   <b-container class="">
-      <div class="pt-5">
-         <p class="text-muted font-weight-light">Brands growing with us:</p>
-      <div class="d-sm-block d-md-flex justify-content-between align-items-center">
-        <img src="@/static/img/brand1.svg" alt="bolt" class="" style="width: 120px;"/>
-        <img src="@/static/img/brand3.svg" alt="bitmama" class="px-md-3" style="width: 120px;" />
-        <img src="@/static/img/brand2.svg" alt="blackcopper" class="px-md-3" style="width: 120px;" />
-        <img src="@/static/img/brand4.svg" alt="jise" class="px-md-3"  style="width: 120px;"/>
-        <img src="@/static/img/brand6.svg" alt="transtura" class="px-md-3" style="width: 120px;" />
-        <img src="@/static/img/brand5.svg" alt="sodtAlliance" class="" style="width: 120px;" />
+  <main class="container mx-auto lg:pb-5 pb-3">
+    <div class="pt-5 space-y-4">
+      <p class="text-base text-gray-400">Brands growing with us:</p>
+      <div
+        class="flex justify-between items-center space-x-2"
+      >
+        <img class="w-16" src="@/static/img/bitmama.svg" />
+        <img class="" src="@/static/img/healthTracka.svg" />
+        <img class="w-16" src="@/static/img/jise.svg" />
+        <img class="hidden md:flex" src="@/static/img/transtura.svg" />
+        <img class="hidden md:flex" src="@/static/img/ajomoney.svg" />
+        <img class="hidden md:flex" src="@/static/img/nellies.svg" />
       </div>
-      </div>
-  </b-container>
+    </div>
+  </main>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

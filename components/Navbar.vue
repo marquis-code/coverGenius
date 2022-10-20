@@ -1,47 +1,150 @@
 <template>
-    <div>
-        <b-navbar toggleable="lg" type="dark" variant="light">
-            <b-container class="px-1 px-lg-0">
-                <b-navbar-brand href="#"><img src="@/static/img/logo.svg" alt="logo" /></b-navbar-brand>
+  <div class="">
+    <header aria-label="Site Header" class="bg-gray-100 py-2">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600" href="/">
+              <span class="sr-only">Home</span>
 
-                <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+              <img src="@/static/img/logo.svg" />
+            </a>
+          </div>
 
-                <b-collapse id="nav-collapse" is-nav class="">
-                    <b-navbar-nav>
-                        <b-nav-item href="#"><span class="text-dark">For Individuals</span></b-nav-item>
-                        <b-nav-item href="#"><span class="text-dark">For Business</span></b-nav-item>
-                    </b-navbar-nav>
+          <div class="hidden md:block">
+            <nav aria-label="Site Nav">
+              <ul class="flex items-center gap-6 space-x-52">
+                <div class="flex items-center space-x-5">
+                  <li>
+                    <a
+                      class="text-gray-500 transition font-light hover:text-gray-500/75"
+                      href="/"
+                    >
+                     For Individuals
+                    </a>
+                  </li>
 
-                      <b-navbar-nav class="ml-auto">
-                            <b-nav-item href="#"><span class="text-dark">Claims</span></b-nav-item>
-                            <b-nav-item href="#"><span class="text-dark">Resources</span></b-nav-item>
-                            <b-nav-item href="#"><span class="text-dark">Company</span></b-nav-item>
-                    </b-navbar-nav>
+                  <li>
+                    <a
+                      class="text-gray-500 transition font-light hover:text-gray-500/75"
+                      href="/"
+                    >
+                      Plans
+                    </a>
+                  </li>
+                </div>
 
-                  
-                    <b-navbar-nav class="ml-auto">
-                        <b-nav-form>
-                            <b-button size="md" class="my-2 my-sm-0 mr-2" type="submit">Login</b-button>
-                            <b-button size="md" class="my-2 my-sm-0 ml-2" type="submit">Get Covered</b-button>
-                        </b-nav-form>
+                <div class="flex items-center space-x-5">
+                  <li>
+                    <a
+                      class="text-gray-500 transition font-light hover:text-gray-500/75"
+                      href="/"
+                    >
+                     Claims
+                    </a>
+                  </li>
 
-                    </b-navbar-nav>
-                </b-collapse>
-            </b-container>
-        </b-navbar>
-    </div>
+                  <li>
+                    <a
+                      class="text-gray-500 transition font-light hover:text-gray-500/75"
+                      href="/"
+                    >
+                     API
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-gray-500 transition font-light hover:text-gray-500/75"
+                      href="/"
+                    >
+                     Company
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="
+                  rounded-md
+                  py-2
+                  text-sm
+                  text-gray-500
+                  bg-gray-200
+                  shadow
+                    px-4
+                  font-light
+                "
+                href="/"
+              >
+                Login
+              </a>
+
+              <div class="hidden sm:flex">
+                <a
+                  class="
+                    rounded-md
+                    bg-gray-10
+                    py-2
+                    px-4
+                    text-sm
+                    text-white
+                    bg-teal-600
+                    font-light
+                  "
+                  href="/"
+                >
+                 Get Covered
+                </a>
+              </div>
+            </div>
+
+            <div class="block md:hidden">
+              <button
+                class="
+                  rounded
+                  bg-gray-100
+                  p-2
+                  text-gray-600
+                  transition
+                  hover:text-gray-600/75
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
 button {
-    background-color: #439687;
-    border: none;
-    outline: none;
+  background-color: #439687;
+  border: none;
+  outline: none;
 }
 </style>
